@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4D9BC8982FFC8A3A00780CC4 /* OProximoAporteKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D9BC8972FFC8A3A00780CC4 /* OProximoAporteKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4D9BC85D2FFC63AC00780CC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		4D9BC84D2FFC63AA00780CC4 /* OProximoAporte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OProximoAporte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9BC85C2FFC63AC00780CC4 /* OProximoAporteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OProximoAporteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9BC8662FFC63AC00780CC4 /* OProximoAporteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OProximoAporteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D9BC8792FFC656A00780CC4 /* OProximoAporteKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OProximoAporteKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9BC8982FFC8A3A00780CC4 /* OProximoAporteKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +81,7 @@
 		4D9BC8442FFC63A900780CC4 = {
 			isa = PBXGroup;
 			children = (
+				4D9BC8792FFC656A00780CC4 /* OProximoAporteKit */,
 				4D9BC84F2FFC63AA00780CC4 /* OProximoAporte */,
 				4D9BC85F2FFC63AC00780CC4 /* OProximoAporteTests */,
 				4D9BC8692FFC63AC00780CC4 /* OProximoAporteUITests */,
@@ -112,6 +119,7 @@
 			);
 			name = OProximoAporte;
 			packageProductDependencies = (
+				4D9BC8972FFC8A3A00780CC4 /* OProximoAporteKit */,
 			);
 			productName = OProximoAporte;
 			productReference = 4D9BC84D2FFC63AA00780CC4 /* OProximoAporte.app */;
@@ -192,9 +200,13 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 4D9BC8442FFC63A900780CC4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4D9BC8962FFC8A3A00780CC4 /* XCLocalSwiftPackageReference "OProximoAporteKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4D9BC84E2FFC63AA00780CC4 /* Products */;
 			projectDirPath = "";
@@ -328,6 +340,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -384,6 +397,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -395,6 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HKX3Q4L7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -426,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HKX3Q4L7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -570,6 +586,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4D9BC8962FFC8A3A00780CC4 /* XCLocalSwiftPackageReference "OProximoAporteKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = OProximoAporteKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D9BC8972FFC8A3A00780CC4 /* OProximoAporteKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OProximoAporteKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4D9BC8452FFC63A900780CC4 /* Project object */;
 }
