@@ -195,10 +195,9 @@
 				};
 			};
 			buildConfigurationList = 4D9BC8482FFC63A900780CC4 /* Build configuration list for PBXProject "OProximoAporte" */;
-			developmentRegion = en;
+			developmentRegion = "pt-BR";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 				"pt-BR",
 			);
