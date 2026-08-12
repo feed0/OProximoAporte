@@ -34,7 +34,7 @@ public final class AssetModel {
     
     @Relationship(
         deleteRule: .deny,
-        inverse: \TransactionModel.asset
+        inverse: \TransactionModel.asset,
     )
     var transactions: [TransactionModel]? = []
     
@@ -48,7 +48,7 @@ public final class AssetModel {
         self.name = name
     }
     
-    // MARK: - Factory
+    // MARK: Factory
     
     public static func acao(
         name: String,
@@ -99,5 +99,4 @@ public final class AssetModel {
         
         return asset
     }
-    
 }
