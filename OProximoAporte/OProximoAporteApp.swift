@@ -7,23 +7,36 @@
 
 import SwiftUI
 import SwiftData
+import OProximoAporteKit
 
 @main
 struct OProximoAporteApp: App {
+    
+    // MARK: - Properties
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            
+            AssetModel.self,
+            TransactionModel.self,
         ])
         
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        let modelConfiguration = ModelConfiguration(
+            schema: schema,
+            isStoredInMemoryOnly: false,
+        )
 
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return try ModelContainer(
+                for: schema,
+                configurations: [modelConfiguration],
+            )
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
+    
+    // MARK: - Body
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
