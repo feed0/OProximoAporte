@@ -10,4 +10,5 @@ import Foundation
 public enum TesouroKindEnum: String, Codable, CaseIterable {
     case ipcaMais
     case ipcaMaisRendaMais
+    case selic
 }
